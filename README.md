@@ -1,0 +1,2 @@
+# Tek-nota
+Media Phyton
