@@ -1,0 +1,82 @@
+print("exercicio #1")
+nome = input("digite o seu nome:")
+idade = int(input("digite a sua idade:"))
+anoatual = 2019
+anonascimento = anoatual - idade
+calculoidade = anonascimento + 100
+print(nome + ", voce irá fazer 100 anos em", calculoidade)
+
+********************************************************************************
+print("exercicio #2")
+nome = input("digite o seu nome:")
+idade = int(input("digite a sua idade:"))
+qtd= int(input("quantas vezes você gostaria de imprimir a mensagem?"))
+anoatual = 2019
+anonascimento = anoatual - idade
+calculoidade = anonascimento + 100
+while(qtd!= 0):
+  print(nome + ", você irá fazer 100 anos em", calculoidade)
+qtd= qtd-1
+********************************************************************************
+print("exercicio #3")
+n = int(input("digite um número:"))
+if(n%2 == 0):
+  print("número par")
+else:
+    print("número impar")
+    
+********************************************************************************
+    
+    print("exercicio #4")
+numeros = [4,5,6,7,8,-3,9,-4]
+for i in range(len(numeros)):
+  if(numeros[i]<0):
+   print(numeros[i])
+   
+   *****************************************************
+   print("exercicio #5")
+list(range(0,101,2))
+
+#
+print("exercicio #5")
+
+for i in range(101):
+  if(i%2==0):
+   print(i)
+   
+   **************************************************************
+   print("exercicio #6-a")
+list = [1,2,3,5,8,13,21,34,55,89]
+for i in range(len(list)):
+    if (list[i] <6):
+      print(list[i])
+      *********************************************
+ print("exercicio #6-b")
+lst = [1,2,3,5,8,13,21,34,55,89]
+novalst=[]
+for item in lst:
+    if item <= 5:
+       novalst.append(item)
+print(novalst)
+**************************************************************
+print("exercicio #6-c")
+n = int(input("digite um numero:"))
+lst = [1,2,3,5,8,13,21,34,55,89]
+novalst=[]
+for item in lst:
+    if item <= n:
+       novalst.append(item)
+print(novalst)
+*****************************************************
+print("exercicio #8-a")
+l1 =[1,2,3,5,8,13,21,34,55,89]
+l2 =[1,2,3,5,6,7,8,9,10,11,12,13]
+novalst =[]
+
+for i in range(len(l1)):
+  for j in range(len(l2)):
+      if (l1[i] == l2[j]) and (l1[i] != l1[i-1]) and (l2[j] != l2[j-1]):
+            novalst.append(l1[i])
+
+print(novalst)
+
